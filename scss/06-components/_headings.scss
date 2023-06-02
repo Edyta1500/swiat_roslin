@@ -1,0 +1,28 @@
+@use '../01-settings' as *;
+@use '../02-tools' as *;
+
+
+.heading {
+    &--h1{
+       
+        font-size: 4rem;
+
+        @include medium{
+            font-size: 8rem;
+           
+        }
+        @include large{
+            font-size: 10rem;
+        }
+    
+}
+&--h2{
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+    margin: 2rem;
+    @include medium{
+        font-size:  5rem;
+    }
+}
+}

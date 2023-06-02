@@ -1,0 +1,29 @@
+//FONTS
+
+$font-base: 10px;
+
+$grid-base: $font-base;
+
+$gutter: 1.5 * $grid-base;
+
+//COLORS
+$color-white:#587479;
+$color-brown:#a2bd7b;
+$color-bg-body: transparent;
+$color-bg-footer:  black;
+$color-bg-body: $color-brown;
+$color-bg-section: $color-white;
+$color-bg-header: #467302;
+$color-body:#a2bd7b;
+
+
+$header-height: 18rem;
+
+
+
+// BREAKPOINTS
+$bp-sm: 350px;
+ 
+$bp-md: 768px;
+
+$bp-lg: 1240px;

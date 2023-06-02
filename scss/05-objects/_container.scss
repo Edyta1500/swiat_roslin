@@ -1,0 +1,22 @@
+@use '../01-settings/' as *;
+@use '../02-tools/' as *;
+
+.container {
+
+    width: 100%;
+    padding: 0 auto;
+    margin: 0 ;
+    
+     
+   
+    @include medium {
+        max-width: 74*$grid-base;
+     
+    }
+
+    @include large {
+        max-width: 112*$grid-base; 
+     
+    }
+   
+}

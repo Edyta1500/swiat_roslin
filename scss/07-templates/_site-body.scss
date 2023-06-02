@@ -1,0 +1,26 @@
+@use '../01-settings/' as *;
+@use '../02-tools/' as *;
+
+.site-body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-bg-body;
+    width: 100%;
+    max-width: 1200px;
+
+    &__social {
+        position: fixed;
+        left: -135px;
+        bottom: 20%;
+    }
+
+    &__cookies {
+
+        position: fixed;
+        bottom: 0;
+        right: 0;
+
+    } 
+}

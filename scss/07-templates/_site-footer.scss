@@ -1,0 +1,17 @@
+@use '../01-settings/' as *;
+@use '../02-tools/' as * ;
+
+.site-footer {
+   display: flex;
+    position:relative;
+   
+ order:4;
+  
+   color:$color-white;
+  
+    background-color: $color-bg-footer;
+    width: 100%;
+    max-width: 1200px;
+   
+   
+}

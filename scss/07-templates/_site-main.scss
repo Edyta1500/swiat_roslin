@@ -1,0 +1,19 @@
+@use '../01-settings/' as *;
+@use '../02-tools/' as *;
+
+.site-main {
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: $color-bg-body;
+    max-width: 1200px;
+    padding: 2rem;
+    scroll-margin-top: $header-height;   
+
+   
+    }
+
+

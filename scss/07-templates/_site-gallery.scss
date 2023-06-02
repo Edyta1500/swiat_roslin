@@ -1,0 +1,10 @@
+@use '../01-settings/' as *;
+
+.site-gallery {
+    min-height: 30vh;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+}

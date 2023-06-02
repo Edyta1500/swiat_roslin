@@ -1,0 +1,40 @@
+@use '../01-settings/' as *;
+@use '../02-tools/' as *;
+
+.form {
+    width: 90%;
+    
+
+    @include medium {
+        width: 75%;
+    }
+
+    &__label {
+        font-size: 1.8rem;
+        margin: .6rem 0px;
+        display: block;
+    }
+
+    &__item {
+        color: $color-white;
+        font-family: inherit;
+        display: block;
+        width: 100%;
+        font-size: 1.8rem;
+        padding: 1.4rem;
+        background-color: rgb(97, 146, 103);
+        border: .1rem solid $color-white;
+        border-radius: .4rem;
+        outline: 0;
+        resize: none;
+
+        &:focus {
+            background-color: $color-brown;
+            color: $color-white;
+        }
+        &--submit{
+            width: 40%;
+            margin: 0 auto;
+        }
+        }
+    }
