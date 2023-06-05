@@ -18,6 +18,22 @@
     opacity: 1;
   }
 }
+@keyframes entrance {
+  0% {
+    transform: scale(0);
+    transform-origin: 50% 0%;
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    transform-origin: 50% 0%;
+    opacity: 1;
+  }
+}
+.entrance {
+  animation: entrance 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -82,7 +98,7 @@ html {
   display: flex;
   justify-content: center;
   scroll-behavior: smooth;
-  scroll-margin-top: 18rem;
+  scroll-margin-top: 25rem;
 }
 
 body {
@@ -218,13 +234,14 @@ p {
 }
 
 .nav {
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .nav__item {
   font-size: 1.6rem;
-  color: #587479;
+  color: #f9faf7;
   text-transform: uppercase;
 }
 @media screen and (min-width: 768px) {
@@ -237,7 +254,10 @@ p {
   position: fixed;
   top: 2rem;
   width: 50%;
-  height: 50%;
+  height: 50vh;
+  animation: entrance 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  background: rgba(0, 0, 0, 0.8);
+  color: #f9faf7;
 }
 @media screen and (min-width: 768px) {
   .nav-bar {
@@ -245,19 +265,18 @@ p {
   }
 }
 .nav-bar ul {
-  background: rgba(0, 0, 0, 0.8);
-  color: #587479;
+  color: #f9faf7;
   width: 100%;
 }
 .nav-bar__item {
   text-align: center;
   line-height: 8rem;
   width: 100%;
+  height: 100%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.486);
 }
 .nav-bar__link {
-  width: 100%;
-  height: 100%;
+  display: inline-block;
   font-size: 2rem;
 }
 
@@ -283,21 +302,21 @@ p {
   display: block;
 }
 .form__item {
-  color: #587479;
+  color: #f9faf7;
   font-family: inherit;
   display: block;
   width: 100%;
   font-size: 1.8rem;
   padding: 1.4rem;
   background-color: rgb(97, 146, 103);
-  border: 0.1rem solid #587479;
+  border: 0.1rem solid #f9faf7;
   border-radius: 0.4rem;
   outline: 0;
   resize: none;
 }
 .form__item:focus {
-  background-color: #a2bd7b;
-  color: #587479;
+  background-color: #f6efbf;
+  color: #f9faf7;
 }
 .form__item--submit {
   width: 40%;
@@ -306,6 +325,8 @@ p {
 
 .logo {
   color: #a2bd7b;
+  font-family: "Fleur De Leah", cursive;
+  font-size: 6rem;
 }
 .logo__under {
   display: flex;
@@ -320,7 +341,7 @@ p {
 .logo__under--line {
   flex-basis: 42%;
   height: 0.3rem;
-  background-color: #587479;
+  background-color: #a2bd7b;
   margin-right: 0.5rem;
   border-radius: 20px 50px 20px 20px;
 }
@@ -360,14 +381,24 @@ p {
   }
 }
 
+.ico {
+  color: #f9faf7;
+}
+
+.bg-dark {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+}
+
 .site-body {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #a2bd7b;
+  background-color: #f9faf7;
   width: 100%;
-  max-width: 1200px;
 }
 .site-body__social {
   position: fixed;
@@ -382,18 +413,15 @@ p {
 
 .site-header {
   position: sticky;
-  top: -14.4rem;
+  top: -20rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   z-index: 2;
   width: 100%;
-  height: 18rem;
-  max-width: 1200px;
+  height: 25rem;
   border-radius: 5px;
-  background-color: rgb(201, 255, 159);
-  background-image: radial-gradient(circle, rgb(201, 255, 159) 0%, rgb(56, 57, 59) 100%);
-  padding: 10px;
+  background: url(../../assets/tl.jpg) center/cover;
   -webkit-box-shadow: 0px 26px 46px -24px rgb(66, 68, 90);
   -moz-box-shadow: 0px 26px 46px -24px rgb(66, 68, 90);
   box-shadow: 0px 26px 46px -24px rgb(66, 68, 90);
@@ -401,12 +429,12 @@ p {
 @media screen and (min-width: 768px) {
   .site-header {
     position: sticky;
-    top: -10.8rem;
+    top: -15rem;
   }
 }
 @media screen and (min-width: 1240px) {
   .site-header {
-    top: -12.6rem;
+    top: -17.5rem;
   }
 }
 .site-header__item {
@@ -419,9 +447,6 @@ p {
 .site-header__item--logo {
   flex-basis: 50%;
 }
-.site-header__item--logo {
-  flex-basis: 50%;
-}
 @media screen and (min-width: 768px) {
   .site-header__item {
     flex-direction: row;
@@ -429,8 +454,15 @@ p {
     width: 100%;
   }
 }
+.site-header__item--contact {
+  color: #f9faf7;
+}
 .site-header__item--ico {
   padding-right: 1rem;
+}
+.site-header__item--menu {
+  color: #f9faf7;
+  display: flex;
 }
 .site-header__item p {
   display: flex;
@@ -472,10 +504,8 @@ p {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background-color: #a2bd7b;
-  max-width: 1200px;
-  padding: 2rem;
-  scroll-margin-top: 18rem;
+  background-color: #f6efbf;
+  scroll-margin-top: 25rem;
 }
 
 .site-gallery {

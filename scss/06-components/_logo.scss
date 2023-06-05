@@ -3,6 +3,8 @@
 
 .logo {
     color: $color-body;
+    font-family: 'Fleur De Leah', cursive;
+    font-size: 6rem;
 
     &__under {
         display: flex;
@@ -16,7 +18,7 @@
         &--line {
             flex-basis: 42%;
             height: 0.3rem;
-            background-color: $color-white;
+            background-color: $color-body;
             margin-right: .5rem;
             border-radius: 20px 50px 20px 20px;
 
