@@ -6,15 +6,33 @@ $grid-base: $font-base;
 
 $gutter: 1.5 * $grid-base;
 
-//COLORS
-$color-white:#f9faf7;
-$color-brown:#f6efbf;
-$color-bg-body: #f6efbf;
-$color-bg-footer:  black;
-$color-bg-body: $color-brown;
-$color-bg-section: $color-white;
-$color-bg-header: #467302;
-$color-body:#a2bd7b;
+
+//palette1
+// $color-black:#091414;
+// $color-dark-green:#3d544e;
+// $color-brown: #5b293b;
+// $color-pink:#ff557e;
+// $color-light-green:#bcc789;
+// $color-light-pink:#ff959a;
+// $color-red:#c01724;
+// $color-white:#fff5e8;
+
+
+//palette2
+$color-light: #fbfbff;
+$color-green2: #A9bf04;
+$color-light-brown: #BF9004;
+$color-green1: #A9bf93;
+$color-green3: #C0D904;
+$color-dark: #0a0a49;
+;//COLORS
+$color-bg: $color-light;
+$color-bg-body: $color-light;
+$color-bg-footer: $color-dark;
+$color-bg-body: $color-light;
+$color-bg-section: $color-light;
+$color-bg-header: $color-light;
+$color-body:$color-light;
 
 
 $header-height: 25rem;

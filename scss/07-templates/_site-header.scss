@@ -4,45 +4,43 @@
 // wg BEM to blok
 .site-header {
     position: sticky;
-    top: -0.8*$header-height;
-
+    top: -14rem;
+   
     display: flex;
     flex-direction: column;
     align-items: center;
     z-index: 2;
     width: 100%;
-    height: $header-height;
-    // max-width: 1200px;
-    border-radius: 5px;
-    background: url(../../assets/tl.jpg) center/cover;
-    
-    // background-color: rgba(201, 255, 159, 1);
-    // background-image: radial-gradient(circle, rgba(201, 255, 159, 1) 0%, rgba(56, 57, 59, 1) 100%);
+    background-color: $color-light;
+    border-bottom: 0.2rem solid $color-green3;
+    @include medium{
+    padding-bottom:3rem;
+        top:-12rem;
+    }
     
    
-    -webkit-box-shadow: 0px 26px 46px -24px rgba(66, 68, 90, 1);
-    -moz-box-shadow: 0px 26px 46px -24px rgba(66, 68, 90, 1);
-    box-shadow: 0px 26px 46px -24px rgba(66, 68, 90, 1);
-
-    @include medium {
-        position: sticky;
-        top: -0.6*$header-height;
-
-    }
-    @include large{
-        top: -0.7*$header-height;
-    }
-
-
     &__item {
-        position: relative;
-        flex-direction: column;
         display: flex;
+        position: relative;
+        width: 100%;
+      
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-
+       padding: 1.5rem 0rem;
         &--logo {
-            flex-basis: 50%;
+            
+            color: $color-light-brown;
+            @include medium{
+                padding-left: 2rem;
+                padding-top:1rem;
+            }
+        }
+
+        &--contact{
+            padding: .5rem;
+           justify-content: top;
+            color: $color-light-brown;
         }
 
        
@@ -50,20 +48,12 @@
         @include medium {
             flex-direction: row;
             justify-content: space-around;
-            width: 100%;
+            flex-wrap: wrap;
         }
         &--contact{
-            color: $color-white;
+            color: $color-light-brown;
+            font-size: 2rem;
         }
-        &--ico {
-            padding-right: 1rem;
-            
-        }
-        &--menu{
-            color: $color-white;
-            display: flex;
-        }
-
 
         & p {
             display: flex;
@@ -73,30 +63,24 @@
     }
 
     &__nav {
-
-        text-align: center;
-        margin-top: 3 * $grid-base;
+        width: 100%;
+        position: absolute;
+        top: 70%;
         display: none;
-        margin-left: 50%;
 
-        @include medium {
+        @include medium{
             display: flex;
-            width: 50%;
-
-            & ul {
-                display: flex;
-                justify-content: space-around;
-                width: 100%;
-
-            }
-
+            bottom: 2rem;
         }
     }
 
 }
 #menu {
+    color:$color-dark;
+    margin-bottom:1rem;
     @include medium {
         display: none;
+       
     }
 
     font-size:3rem;

@@ -9,9 +9,11 @@
     align-items: center;
     width: 100%;
     background-color: $color-bg-body;
-    // max-width: 1200px;
-    // padding: 2rem;
-    scroll-margin-top: $header-height;   
+    margin-bottom:5rem;
+    @include medium{
+    margin-bottom:10rem;
+   
+    }
 
    
     }

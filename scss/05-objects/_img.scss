@@ -1,0 +1,16 @@
+@use '../01-settings/' as *;
+@use '../02-tools/' as *;
+
+.img{
+    background-color: $color-green2;
+    height: 40vh;
+    @include medium{
+        height: 30rem;
+    }
+    @include large{
+        height: 50rem;
+    }
+   &__start{
+    background: url(../../assets/tl.jpg) center/cover fixed;
+   }
+}

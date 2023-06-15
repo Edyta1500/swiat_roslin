@@ -10,12 +10,12 @@
      
    
     @include medium {
-        max-width: 74*$grid-base;
+        max-width: 112*$grid-base;
      
     }
 
     @include large {
-        max-width: 112*$grid-base; 
+        max-width: 160*$grid-base; 
      
     }
    

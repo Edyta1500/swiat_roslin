@@ -17,12 +17,16 @@
     
 }
 &--h2{
-    font-size: 3rem;
+    font-size: 5rem;
+    line-height: 7rem;
+    font-family:'Fleur De Leah', cursive;
+    letter-spacing: 0.5rem;
     width: 100%;
     text-align: center;
     margin: 2rem;
     @include medium{
-        font-size:  5rem;
+        font-size: 10rem;
+        line-height: 15rem;
     }
 }
 }

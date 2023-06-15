@@ -1,5 +1,12 @@
 @use '../01-settings/' as *;
 @use '../02-tools/' as *;
 .ico{
-    color:$color-white;
+    color:$color-light;
+    font-size: 2rem;
+        line-height: 2.8rem;
+        padding: $grid-base;
+        @include medium{
+            font-size: 3rem;
+        line-height: 4rem;
+}
 }
