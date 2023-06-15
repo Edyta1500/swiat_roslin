@@ -9,20 +9,22 @@
     justify-content: top;
     align-items: center;
     padding: 2rem;
+   
          
     @include medium {
        
-        width: 55%;
+        width: 70%;
         right:0;
         flex-direction: row;
      }
 
     @include large{
-        width: 45%;
+        width: 55%;
      }
 
     &__item {
         font-size: 1.6rem;
+        letter-spacing: 0.3rem;
         color: $color-dark;
         text-transform: uppercase;
          
@@ -35,12 +37,14 @@
         @include large{
             margin-right: 2.5rem;
             font-size: 2.5rem;
+          
         }
      }
 
      &__link{
-        font-family: 'Work Sans', Helvetica, sans-serif, 
-     }
+        font-family: 'Work Sans', Helvetica, sans-serif;
+       
+         }
 
  }
 
