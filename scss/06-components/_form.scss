@@ -5,8 +5,11 @@
     width: 90%;
     
 
-    @include medium {
-        width: 75%;
+    @include small {
+        width: 66%;
+    }
+    @include medium{
+        width: 50%;
     }
 
     &__label {
@@ -22,7 +25,7 @@
         width: 100%;
         font-size: 1.8rem;
         padding: 1.4rem;
-        background-color: rgb(97, 146, 103);
+        background-color:$color-green2;
         border: .1rem solid $color-light;
         border-radius: .4rem;
         outline: 0;
