@@ -10,8 +10,8 @@
     align-items: center;
     z-index: 2;
     width: 100%;
-    background-color: $color-light;
-    border-bottom: 0.2rem solid $color-green3;
+    background-color: $color-dark;
+   
    
     @include medium{
     padding-bottom:3rem;
@@ -27,7 +27,7 @@
         justify-content: center;
         padding: 1.5rem 0rem;
         &--logo {
-            font-family:'Fleur De Leah', cursive;
+            
             color: $color-light-brown;
             @include medium{
                 padding-left: 2rem;
@@ -70,7 +70,7 @@
 
 }
 #menu {
-    color:$color-dark;
+    color:$color-light-brown;
     margin-bottom:1rem;
     @include medium {
         display: none;

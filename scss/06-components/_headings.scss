@@ -4,7 +4,7 @@
 
 .heading {
     &--h1{
-       
+        font-family: Montserrat,sans-serif;
         font-size: 4rem;
 
         @include medium{
@@ -17,15 +17,15 @@
     
 }
 &--h2{
-    font-size: 5rem;
+    font-size: 3rem;
     line-height: 7rem;
-    font-family:'Fleur De Leah', cursive;
+   font-family: Montserrat,sans-serif;
     letter-spacing: 0.5rem;
     width: 100%;
     text-align: center;
     margin: 2rem;
     @include medium{
-        font-size: 10rem;
+        font-size: 5rem;
         line-height: 15rem;
     }
 }

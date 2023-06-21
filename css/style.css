@@ -255,6 +255,7 @@ p {
 }
 
 .heading--h1 {
+  font-family: Montserrat, sans-serif;
   font-size: 4rem;
 }
 @media screen and (min-width: 768px) {
@@ -268,9 +269,9 @@ p {
   }
 }
 .heading--h2 {
-  font-size: 5rem;
+  font-size: 3rem;
   line-height: 7rem;
-  font-family: "Fleur De Leah", cursive;
+  font-family: Montserrat, sans-serif;
   letter-spacing: 0.5rem;
   width: 100%;
   text-align: center;
@@ -278,7 +279,7 @@ p {
 }
 @media screen and (min-width: 768px) {
   .heading--h2 {
-    font-size: 10rem;
+    font-size: 5rem;
     line-height: 15rem;
   }
 }
@@ -307,7 +308,7 @@ p {
 .nav__item {
   font-size: 1.6rem;
   letter-spacing: 0.3rem;
-  color: #0a0a49;
+  color: #BF9004;
   text-transform: uppercase;
 }
 @media screen and (min-width: 768px) {
@@ -464,7 +465,6 @@ p {
 }
 
 .ico {
-  color: #fbfbff;
   font-size: 2rem;
   line-height: 2.8rem;
   padding: 10px;
@@ -510,8 +510,7 @@ p {
   align-items: center;
   z-index: 2;
   width: 100%;
-  background-color: #fbfbff;
-  border-bottom: 0.2rem solid #C0D904;
+  background-color: #0a0a49;
 }
 @media screen and (min-width: 768px) {
   .site-header {
@@ -529,7 +528,6 @@ p {
   padding: 1.5rem 0rem;
 }
 .site-header__item--logo {
-  font-family: "Fleur De Leah", cursive;
   color: #BF9004;
 }
 @media screen and (min-width: 768px) {
@@ -568,7 +566,7 @@ p {
 }
 
 #menu {
-  color: #0a0a49;
+  color: #BF9004;
   margin-bottom: 1rem;
   font-size: 3rem;
 }
