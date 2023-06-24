@@ -293,7 +293,7 @@ p {
   }
 }
 .img__start {
-  background: url(../../assets/tl.jpg) center/cover fixed;
+  background: url(../assets/tl.jpg) center/cover fixed;
 }
 
 .heading--h1 {
