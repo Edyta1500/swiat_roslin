@@ -47,3 +47,42 @@ hamburger.addEventListener('click', (e)=>{
 });
 
 body.addEventListener('click', closeAll);
+
+//CONTACT FORM
+
+const validate = function(e) {
+    e.preventDefault();
+
+    const mail  = this.mail.value;
+    // console.log(mail);
+ 
+    const placeError = document.querySelector('#error');
+    
+    // placeError.innerText = '';
+
+    const errors = [];
+
+    const mailPattern = /^[a-z\d]+[\w.-]*@[a-z\d]+[a-z\d-]*\.[a-z]{2,4}$/i;
+
+    const testMail = mailPattern.test(mail);
+
+    if(!testMail){
+
+        errors.push('Podaj poprawny adres email');
+    }
+
+    if(errors.length>0){
+
+        placeError.innerHTML = errors.join('<br>');
+        
+    } else {
+
+        console.log('tu działamy z tymi danymi od użytkownika')
+    }
+
+    console.log(errors);
+}
+
+const form = document.querySelector('form');
+
+form.addEventListener('submit', validate);

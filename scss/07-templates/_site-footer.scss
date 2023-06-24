@@ -8,11 +8,25 @@
     width: 100%;
     color: $color-light-brown;
     background-color: $color-dark;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     min-height: 5rem;
-
+;
     @include medium {
         flex-direction: row;
+    }
+    &__ico{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+       
+        line-height: 2rem;
+        @include medium{
+            width: 50%;
+        }
+        & img{
+            padding-right: 1rem;
+        }
     }
 }

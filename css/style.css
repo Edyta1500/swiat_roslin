@@ -706,7 +706,7 @@ p {
   width: 100%;
   color: #BF9004;
   background-color: #0a0a49;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   min-height: 5rem;
 }
@@ -714,6 +714,21 @@ p {
   .site-footer {
     flex-direction: row;
   }
+}
+.site-footer__ico {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  line-height: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .site-footer__ico {
+    width: 50%;
+  }
+}
+.site-footer__ico img {
+  padding-right: 1rem;
 }
 
 .site-contact {
