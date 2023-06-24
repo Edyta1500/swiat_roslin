@@ -10,3 +10,21 @@
         line-height: 4rem;
 }
 }
+.map {
+   display: flex;
+   justify-content: center;
+    width: 100%;
+    height: 50%;
+    @include medium{
+     
+        height: 50rem;
+    }
+    &  iframe{
+        width: 100%;
+        @include medium{
+            width: 50%;
+            height: 100%;
+        }
+    }
+   
+}
